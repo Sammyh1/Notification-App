@@ -9,4 +9,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.sammy.iscool.notificationapp.AddNewNotification">
 
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Notification Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notification Description" />
+
+        <TextView
+            android:id="@+id/repeatEveryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat Every..."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/repeatSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"></LinearLayout>
 </RelativeLayout>
